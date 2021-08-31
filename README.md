@@ -1,5 +1,5 @@
 # cloud-developer
-Project (Udagram Image Filtering Microservice) Submission for Cloud Developer Course - Full Stack Apps on AWS
+Project (*Udagram Image Filtering Microservice*) Submission for Cloud Developer Course - Full Stack Apps on AWS
 
 |Task                                                | Status / Remarks                                                                                  |
 |----------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -13,7 +13,7 @@ Project (Udagram Image Filtering Microservice) Submission for Cloud Developer Co
 | Create Elastic Beanstalk environment               | Completed                                                                                         |
 | Test Elastic Beanstalk deployment                  | Completed                                                                                         |
 
-Project Submission Checklist
+**Project Submission Checklist**
 
 |Item                                                |Remarks                                                                                                           |
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
