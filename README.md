@@ -18,16 +18,19 @@ Project (*Udagram Image Filtering Microservice*) Submission for Cloud Developer 
 |Item                                                |Remarks                                                                                                           |
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Project Code in Github repository                  |  https://github.com/rrprajiv/cloud-developer dev and master branch, master branch contains stable code           |
-| Typescript typing used wherever possible           |                                                                                                                  |
-| npm run dev runs local instance of server w/o error|                                                                                                                  |
-| Stubbed @TODO endpoint in server.ts completed      |                                                                                                                  |
-| HTTP Status codes used as apppropriate             |                                                                                                                  |
-| Elastic Beanstalk endpoint URL                     |                                                                                                                  |
-| Elastic Beanstalk CLI usage                        |                                                                                                                  |
+| Typescript typing used wherever possible           |  Tried to adhere to the guideline                                                                                |
+| npm run dev runs local instance of server w/o error|  Checked                                                                                                         |
+| Stubbed @TODO endpoint in server.ts completed      |  Checked                                                                                                         |
+| HTTP Status codes used as apppropriate             |  Tried to adhere to the guideline                                                                                |
+| Elastic Beanstalk endpoint URL                     |  Checked [Link](http://udagram-rajiv-image-filter-dev-dev.us-east-2.elasticbeanstalk.com/)                       |
+| Elastic Beanstalk CLI usage                        |  Checked                                                                                                         |
 |                                                    |                                                                                                                  |
 |                                                    |                                                                                                                  |
 |                                                    |                                                                                                                  |
 |                                                    |                                                                                                                  |
 
+** Notes **
+
+While testing the deployed Elastic Beanstalk endpoint, some of the image URLS like https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg do not appear to work. Taking help from knowledge articles [link-1](https://knowledge.udacity.com/questions/666666), [link-2](https://knowledge.udacity.com/questions/382272), the endpoint was tested using other image urls and was found to be working. [Working-image-url-1](https://i.natgeofe.com/n/5806314f-21fe-420c-8d57-2e87254da534/Virgin%20Galactic%20flight_16x9.png?w=1200), [Working-image-url-2] (https://s.yimg.com/os/creatr-uploaded-images/2020-11/2ecd3e90-2811-11eb-bf2e-a5ff0cfc4b94)
 
 
