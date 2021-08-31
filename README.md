@@ -23,7 +23,8 @@ Project (*Udagram Image Filtering Microservice*) Submission for Cloud Developer 
 | Stubbed @TODO endpoint in server.ts completed      |  Checked                                                                                                         |
 | HTTP Status codes used as apppropriate             |  Tried to adhere to the guideline                                                                                |
 | Elastic Beanstalk endpoint URL                     |  Checked [Link](http://udagram-rajiv-image-filter-dev-dev.us-east-2.elasticbeanstalk.com/)                       |
-| Elastic Beanstalk CLI usage                        |  Checked                                                                                                         |
+|                                                    |  [Screen Capture](https://github.com/rrprajiv/cloud-developer/blob/master/eb-deployment-screenshot.JPG)          |
+Elastic Beanstalk CLI usage                          |  Checked                                                                                                         |
 |                                                    |                                                                                                                  |
 |                                                    |                                                                                                                  |
 |                                                    |                                                                                                                  |
