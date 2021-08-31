@@ -13,3 +13,21 @@ Project (Udagram Image Filtering Microservice) Submission for Cloud Developer Co
 | Create Elastic Beanstalk environment               | Completed                                                                                         |
 | Test Elastic Beanstalk deployment                  | Completed                                                                                         |
 
+Project Submission Checklist
+
+|Item                                                |Remarks                                                                                                           |
+|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Project Code in Github repository                  |  https://github.com/rrprajiv/cloud-developer dev and master branch, master branch contains stable code           |
+| Typescript typing used wherever possible           |                                                                                                                  |
+| npm run dev runs local instance of server w/o error|                                                                                                                  |
+| Stubbed @TODO endpoint in server.ts completed      |                                                                                                                  |
+| HTTP Status codes used as apppropriate             |                                                                                                                  |
+| Elastic Beanstalk endpoint URL                     |                                                                                                                  |
+| Elastic Beanstalk CLI usage                        |                                                                                                                  |
+|                                                    |                                                                                                                  |
+|                                                    |                                                                                                                  |
+|                                                    |                                                                                                                  |
+|                                                    |                                                                                                                  |
+
+
+
