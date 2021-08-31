@@ -41,9 +41,9 @@ import {filterImageFromURL, deleteLocalFiles, validURL} from './util/util';
 	  // 2. call filterImageFromURL(image_url) to filter the image
 	  // use await
     try {
-	    const outputFilePath : unknown = await filterImageFromURL(image_url)
+	    const outputFilePath = await filterImageFromURL(image_url) 
       .catch( (err) => {
-        res.status(500).send({message: 'Server Error'});
+        res.status(500).send({message: 'Server Error. Please try with a different image URL and report if the issue persists.'});
       });
 	    console.log(`Output File : ${outputFilePath}`);
 	
@@ -59,7 +59,7 @@ import {filterImageFromURL, deleteLocalFiles, validURL} from './util/util';
         });
       }
     } catch(err) {
-      res.status(500).send('Server Error');
+      res.status(500).send('Server Error : ' + err);
     }
   });
   //! END @TODO1
