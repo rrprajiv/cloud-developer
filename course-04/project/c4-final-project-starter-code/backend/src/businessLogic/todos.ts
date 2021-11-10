@@ -45,9 +45,9 @@ export async function deleteTodo(userId: String, todoId: String) {
 	await todoAccess.deleteTodo(userId, todoId)
 
 }
-//export async function getTodosForUser() {
-
-//}
+export async function getTodosForUser(userId: String): Promise<TodoItem[]> {
+	return await todoAccess.getTodosForUser(userId)
+}
 
 export async function updateTodo(userId: String, todoId: String, updateTodoRequest: UpdateTodoRequest) {
 	return await todoAccess.updateTodo(userId, todoId, updateTodoRequest);

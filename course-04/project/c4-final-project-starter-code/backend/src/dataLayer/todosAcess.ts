@@ -15,10 +15,27 @@ export class TodoAccess {
     private readonly docClient: DocumentClient = createDynamoDBClient(),
     private readonly S3: any                   = createS3Client(),
     private readonly todosTable                = process.env.TODOS_TABLE,
+    private readonly todosIndex                = process.env.TODOS_CREATED_AT_INDEX,
     private readonly logger                    = createLogger('todoAccess')
     ) {
   }
 
+
+  async getTodosForUser(userId: String): Promise<TodoItem[]> {
+    this.logger.log('info', `Getting todos for : ${userId} `)
+
+    const todos = await this.docClient.query({
+      TableName : this.todosTable,
+      IndexName : this.todosIndex,
+      KeyConditionExpression: 'userId = :userId',
+      ExpressionAttributeValues: {
+          ':userId': userId
+      }
+    }).promise()
+
+    const items = todos.Items
+    return items as TodoItem[]
+  }
 
   async getAllTodos(): Promise<TodoItem[]> {
     this.logger.log('info', 'Getting all todos')
