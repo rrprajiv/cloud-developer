@@ -107,14 +107,15 @@ export class TodoAccess {
         }
     };
 
+
+
     await this.docClient.update(params, function(err, data) {
         if (err) {
-           this.logger.log('error', `UpdateTodos : ${err}`); 
+           console.log(`UpdateTodos : ${err}`); 
         } else {
-           this.logger.log(`'info', UpdateTodos : ${data}`); 
+           console.log(`UpdateTodos : ${data}`); 
         }
     }).promise();
-
 
   }
 
