@@ -8,7 +8,8 @@ import { updateTodo } from '../../businessLogic/todos'
 import { UpdateTodoRequest } from '../../requests/UpdateTodoRequest'
 import { getUserId } from '../utils'
 import * as createHttpError from 'http-errors'
-import { createLogger } from '../../utils/logger'
+
+
 
 
 
@@ -17,10 +18,12 @@ export const handler = middy(
     const userId                         = getUserId(event);
     const todoId                         = event.pathParameters.todoId
     const updatedTodo: UpdateTodoRequest = JSON.parse(event.body)
-    const logger                         = createLogger('updateTodo')
+
 
     try {
+      console.log(`Inside updateTodo - userId : ${userId} todoId : ${todoId}`)
       await updateTodo(userId, todoId, updatedTodo);
+
       return {
         statusCode: 200,
         headers: {
@@ -29,8 +32,8 @@ export const handler = middy(
         body: JSON.stringify({})
       }
     } catch(e) {
-        logger.log('error', 'Failed to update')
-        throw new createHttpError.HttpError('Failed to update')
+        console.log(`Failed to update : ${e.message}`)
+        throw new createHttpError.HttpError(`Failed to update : ${e.message}`)
     }
 
   }
